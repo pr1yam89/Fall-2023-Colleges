@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Columbia University</title>
+	
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+		<link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/album/">
+
+		<link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    
+		<link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+		<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+		<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+		<link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+		<link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+		<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+		<meta name="theme-color" content="#712cf9">
+	<style type="text/css">
+		body{
+			background-color: ivory;
+		}
+		h1{
+			color: darkblue;
+			font-family: sans-serif;
+			font-size: 40px;
+			text-align: center;
+      		margin-top: 10px;
+		}
+		h2{
+			text-align: center;
+			font-family: serif;
+			color: crimson;
+		}
+		a{
+			float: right;
+		}
+		.bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+      table,tr,td{
+      	border: 1px solid black;
+      	text-align: center;
+      	margin: 5px;
+      	color: blue;
+      	padding: 10px;
+      }
+	</style>
+</head>
+<body>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+	<h1>University of California</h1>
+	<h2>Los Angeles, California</h2>
+	<hr>
+	<nav class="navbar navbar-dark bg-dark" aria-label="Dark offcanvas navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="font-family: cursive;">Henry Samueli School of Engineering and Applied Science</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">Index</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Colleges_applied.html">Colleges Applied</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="USC.html">University of Southern California</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="IUB.html">Indiana University</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="UTD.html">Univeristy of Texas at Dallas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="SUNY_Buffalow.html">SUNY Buffalow</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="RIT.html">Rochester Institute of Technology</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="NCSU.html">North Carolina State University</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="UMTC.html">University of Minnesota- Twin Cities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="UMD.html">University of Maryland- College Park</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="UPenn.html">University of Pennyslyvannia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="UD.html">University of Delaware</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="UIUC.html">Univeristy of Illinois- Urbana Champaign</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="UW.html">University of Washington</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Stony_brook.html">Stony Brook University</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Virginia_Tech.html">Virginia Tech</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="NWU.html">North Western University</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="UCLA.html">University of California- Los Angeles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Georgia_Tech.html">Georgia Tech</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="UWM.html">University of Wisconsin- Madison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="NEU.html">Northeastern University</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="UMAA.html">University of Michigan- Ann arbor</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav><!--
+	<h3 style="text-align: center; margin-top: 10px; font-family: cursive; font-size: 40px; color: darkgreen;">Viterbi School of Engineering</h3>
+	<hr>-->
+  
+  	<hr>	
+		<h1 style=" font-family: fantasy;">MS Computer Science</h1>
+		<p style=" margin-left: 20px; float: left; font-size: 10px;"><strong>Program URL:</strong><a href="https://grad.ucla.edu/programs/school-of-engineering-and-applied-science/computer-science/">https://grad.ucla.edu/programs/school-of-engineering-and-applied-science/computer-science/</a> </p>
+		<p style=" margin-right: 10px; float: right; font-size:10px"><strong>Application Link:</strong><a href="https://apply.engineering.columbia.edu/account/logout?r=https%3a%2f%2fapply.engineering.columbia.edu%2fapply%2f">https://apply.engineering.columbia.edu/account/logout?r=https%3a%2f%2fapply.engineering.columbia.edu%2fapply%2f</a></p><br>
+		<p style=" margin: 20px; text-align: center; font-size: 30px; color: darkred;">Application Deadline: 15th December 2022</p><br>
+		
+		<table style="margin-left: 35%; font-size: 20px;">
+			<tr>
+				<td>GRE</td>
+				<td colspan="2">Not Required</td>
+			</tr>
+			<tr>
+				<td>TOEFL</td>
+        <td>R-21 L-17 S-24 W-25</td>
+				<td>Total- 87</td>
+			</tr>
+		</table>
+		<br/>
+    <p style="text-align: center; color: green; font-size:18px;">Application Fees: $75</p>
+		<div>
+			<p style="font-size: 20px; color: navy; float: left; margin-left:30%;">Total Credits: 30</p>
+			<p style="font-size: 20px; color: navy; float: right; margin-right:30%;">Course Duration: 2 years</p>
+		</div><br/>
+		<p style="margin-left: 30%; float: left; color: navy; font-size: 25px;">Cost: $2216/credit</p>
+		<p style="font-size: 25px; color: navy; float: right; margin-right:30%;">Total Cost: $66,490</p>
+</body>
+</html>

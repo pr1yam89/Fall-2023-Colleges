@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Application Deadline</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+	<link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/album/">
+
+	<link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    
+	<link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+	<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+	<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+	<link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+	<link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+	<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+	<meta name="theme-color" content="#712cf9">
+
+	<style type="text/css">
+		body{
+			background-color: ivory;
+		}
+		h1{
+			color: darkblue;
+			font-family: sans-serif;
+			font-size: 60px;
+			text-align: center;
+      margin-top: 10px;
+		}
+		.bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+	</style>
+	<style type="text/css">	
+
+	.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	}
+	.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+	}
+	.styled-table th,
+	.styled-table td {
+    	padding: 12px 15px;
+	}
+	.styled-table tbody tr {
+    	border-bottom: thin solid #dddddd;
+	}
+
+	.styled-table tbody tr:nth-of-type(even) {
+    	background-color: #f3f3f3;
+	}
+
+	.styled-table tbody tr:last-of-type {
+    	border-bottom: 2px solid #009879;
+	}
+	
+	</style>
+</head>
+<body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+	
+<nav class="navbar navbar-dark bg-dark" aria-label="Dark offcanvas navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style=" font-family: cursive;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">Index</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Colleges_applied.html">Colleges Applied</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="UPenn.html">University of Pennyslyvannia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="UIUC.html">Univeristy of Illinois- Urbana Champaign</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="UW.html">University of Washington</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="USC.html">University of Southern California</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="UIC.html">University of Illinois</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="UMD.html">University of Maryland- College Park</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="UWM.html">University of Wisconsin- Madison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="SJSU.html">San Jose State University</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="UNCCH.html">University of North Carolina- Chapel Hill</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="RIT.html">Rochester Institute of Technology</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="UCLA.html">University of California- Los Angeles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="UTD.html">Univeristy of Texas at Dallas</a>
+            </li>    
+            <!--
+            <li class="nav-item">
+              <a class="nav-link" href="IUB.html">Indiana University</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="SUNY_Buffalow.html">SUNY Buffalow</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="NCSU.html">North Carolina State University</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="UMTC.html">University of Minnesota- Twin Cities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="UD.html">University of Delaware</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Virginia_Tech.html">Virginia Tech</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="NWU.html">North Western University</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Georgia_Tech.html">Georgia Tech</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="UMAA.html">University of Michigan- Ann arbor</a>
+            </li>
+          -->
+            <li class="nav-item">
+              <a class="nav-link" href="NEU.html">Northeastern University</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Stony_brook.html">Stony Brook University</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="NYU.html">New York University</a>
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+	<table class="styled-table" style="margin-top: 40px; margin-left: 500px;">
+    <thead>
+        <tr>
+            <th>Name of the University</th>
+            <th>Application Deadline</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+    	<tr>
+            <td>University of Pennyslyvania</td>
+            <td>1st November 2022</td>
+        </tr>
+        <tr>
+            <td>University of Illinois- Urbana Chaimpagn</td>
+            <td>15th December 2022</td>
+        </tr>
+        <tr>
+            <td>University of Washington</td>
+            <td>1st January 2023</td>
+        </tr>
+        <tr>
+            <td>University of Southern California</td>
+            <td>15th December 2022</td>
+        </tr>
+        <tr>
+            <td>University of Illinois- Chicago</td>
+            <td>1st November 2022</td>
+        </tr>
+        <tr>
+            <td>University of Maryland - College Park</td>
+            <td>15th December 2022</td>
+        </tr>
+        <tr>
+            <td>San Jose State University</td>
+            <td>Arpil 1, 2023</td>
+        </tr>
+        <tr>
+            <td>University of North Carolina - Chapel Hill</td>
+            <td>13 December 2023</td>
+        </tr>
+        <tr>
+            <td>Rochester Institute of Technology</td>
+            <td>Rolling admissions</td>
+        </tr>
+        <tr>
+            <td>University of Texas - Dallas</td>
+            <td>15th January 2023</td>
+        </tr>
+        <tr>
+            <td>New York University</td>
+            <td>15th November 2022</td>
+        </tr>
+        <tr>
+            <td>Stony brook University</td>
+            <td>15th January 2022</td>
+        </tr>
+        <tr>
+            <td>University of California- Los Angeles</td>
+            <td>15th May 2023</td>
+        </tr>
+        <tr>
+            <td>University of Wisconsin-Madison</td>
+            <td>15th March 2023</td>
+        </tr>
+        <tr>
+            <td>Northeastern University</td>
+            <td>17th July 2023</td>
+        </tr>
+        
+    </tbody>
+</table>
+
+</body>
+</html>
